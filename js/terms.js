@@ -9,6 +9,7 @@ function startAnim(array){
                 zIndex: 0, delay:0.03,
                 ease: Cubic.easeInOut,
                 onComplete: sortArray(array)
+
             }
         );
         TweenMax.fromTo(array[1], 0.5, {x:79, y: 125, opacity:1, zIndex: 1}, {x:0, y: 0, opacity:0.75, zIndex: 0, boxShadow: '-5px 8px 8px 0 rgba(82,89,129,0.05)', ease: Cubic.easeInOut});
